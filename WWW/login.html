@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+	<title>登录</title>
+</head>
+<style>
+	body {
+		background-image: url('bg.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+</style>
+
+<body align="center" style="color: rgb(255, 255, 255);font-family:微软雅黑">
+	<h1 style="font-family:华文新魏">登录</h1>
+	<hr><br>
+	<form action="login.php" method="post">
+		<br><br><br><br><br><br><br><br><br><br>
+		<table align="center" width="500" style="color: rgb(255, 255, 255); border:2px">
+			<tr>
+				<td>
+					身份：<input type="radio" name="identit" value="teacher" />老师
+					<input type="radio" name="identit" value="student" />学生
+					<input type="radio" name="identit" value="admin" checked="checked"/>管理员
+					<br /><br />
+					<br /><br />
+					用户名　：<input type="text" name="loginuserName" id="loginuserName" placeholder="请输入用户名" required />
+					<br /><br />
+					<br /><br />
+					密　码　：<input type="password" name="loginuserPwd" id="loginuserPwd" placeholder="请输入密码" required />
+					<br /><br />
+					
+				</td>
+			</tr>
+		</table>
+		<br><br><br><br><br><br><br><br><br><br><br>
+		<input class="mybutton" type="submit" value="登录" name="btnSubmit" />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		<input class="mybutton" type="reset" value="重置" name="btnReset" />
+	</form>
+	<br /><br />
+	<a href="sign.html">未有账号点此注册</a><br /><br />
+	<hr><br>
+	<h10 style="color: grey;font-family:Times New Roman">copyright--1798224146@qq.com</h10>
+</body>
+
+</html>

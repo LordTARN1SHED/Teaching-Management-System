@@ -1,0 +1,257 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	font-family: YouYuan;
+	background-position: center top;/* 水平居中,底部对齐 */
+	background-size: 100% auto;/* 横向自动,纵向100% */
+	background-repeat: no-repeat;
+	background-attachment: fixed;/* 不随滚轮移动 */
+	background-color: rgba(171, 206, 241, 0.9);/* rgb颜色,a不透明度 */
+	background-image: url(images/background.jpg);
+}
+
+ul{
+	padding:20px ;
+}
+
+ol{
+	padding:20px ;
+}
+
+.header {
+	height: 90px;
+	background-color: rgb(250, 248, 244);
+	border-bottom: 5px solid;
+	border-color: black;
+}
+
+.logo{
+	float: left;
+	position: absolute;
+	top: 3px;
+	left:30px;
+}
+
+.logo img{
+	width: 300px;
+	height: 85px;
+}
+
+.title{
+	top: 0px;
+	letter-spacing: 3px;/* 每个字的左右间隔 */
+}
+
+
+.nnaa {
+	position: fixed;
+	top: 220px;
+	left: 0;
+	width: 200px;
+	height:55%;
+	background-color:rgba(255, 255, 255, 0.906);
+	color: #333;
+	font-size: 18px;
+	border: 3px solid rgb(112, 112, 112);
+	border-radius: 0 30px 30px 0;
+  }
+  
+  .nnaa2 {
+	position: fixed;
+	top: 170px;
+	left: 0;
+	width: 190px;
+	height:65%;
+	background-color:rgba(255, 255, 255, 0.906);
+	color: #333;
+	font-size: 18px;
+	border: 3px solid rgb(112, 112, 112);
+	border-radius: 0 30px 30px 0;
+  }
+
+  .uull {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+  }
+  
+  .llii {
+	padding: 30px;
+	color: rgba(255, 255, 255, 0.639);
+	font-family:宋体
+  }
+  
+  .aa {
+	text-decoration: none;
+	color: #164e71;
+  }
+  
+
+  
+.nav {
+	float: left;
+	width: 100%
+}
+
+.navbox {
+	display: block;
+	float: left;
+	width: 50%;
+	height: 50px;
+	text-decoration: none;
+	font-size: 30px;
+	font-weight: 700;
+	color: rgb(37, 43, 29);
+	line-height: 50px;
+	background-color: rgba(42, 116, 195, 0.65);
+	transition: 0.5s;/* 渐变 */
+	letter-spacing: 5px;/* 每个字的左右间隔 */
+}
+
+.navbox:hover {
+	background-color: rgb(235, 190, 101);
+}
+
+body {
+	font-size: 100%;
+  }
+  
+  .H {
+	font-size: 5em;
+	font-family:华文新魏;
+	color: rgb(0, 9, 51);
+  }
+
+  .H1 {
+	font-size: 2.75em;
+	font-family:华文新魏;
+	color: rgb(0, 28, 154);
+  }
+  .H2 {
+	font-size: 2.25em;
+	font-family:华文新魏;
+	color: rgb(47, 72, 174);
+  }
+  .H3 {
+	font-size: 1.75em;
+	font-family:华文新魏;
+	color: rgb(63, 114, 190);
+  }
+  .H4 {
+	font-size: 1.25em;
+	font-family:华文新魏;
+	color: rgb(101, 175, 215);
+  }
+  
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+
+
+/* ---------------轮播图片----------------- */
+/* --------------------------------------------------------------------- */
+.border{
+	width: 450px;
+	height: 380px;
+	position: fixed;
+	margin-top: 180px;
+	margin-left: 1198px;
+	border: 3px solid rgb(112, 112, 112);
+	border-radius:  50px 0 0 50px ;
+	background-color: rgba(255, 255, 255, 0.895);
+	display: flex;/* 弹性布局:使容器内的子元素排列和尺寸自适应 */
+	align-items: center;/* 居中 */
+}
+.turn{
+	width: 800px;
+	height: 600px;
+	text-align: center;
+	position: absolute;
+	right: 90px;
+	display: inline-block;/* 既能够设置宽高，又能够在一行内显示 */
+}
+.img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transition: opacity 2s ease-in-out; /* 轮播图片渐变 */
+}
+.img img{
+	border-radius:  20px 20px 20px 20px ;
+	box-shadow: 10px 10px 20px rgba(74, 74, 74, 0.5);/* 阴影 */
+}
+/* 左后移动箭头 */
+.left{
+	z-index: 2;
+	width: 50px;
+	height: 150px;
+	/* 子div相对于父div的位置 */
+	position: absolute;
+	top: 230px;
+	left: 0;
+	background-color: #00000050;/* 半透明 */
+	color: gray;
+	border-radius: 0 5px 5px 0;/* 边框弧度 */
+	/* 小于符号在当前div中的位置 */
+	text-align: center;/* 水平居中 */
+	line-height: 140px;/* 垂直居中 */
+	font-size: 27px;
+}
+.left:hover{
+	color: white;
+}
+.right{
+	z-index: 2;
+	width: 50px;
+	height: 150px;
+	/* 子div相对于父div的位置 */
+	position: absolute;
+	top: 230px;
+	right: 0;
+	background-color: #00000050;/* 半透明 */
+	color: gray;
+	border-radius: 5px 0 0 5px;/* 边框弧度 */
+	/* 大于符号在当前div中的位置 */
+	text-align: center;/* 水平居中 */
+	line-height: 140px;/* 垂直居中 */
+	font-size: 27px;
+}
+.right:hover{
+	color: white;
+}
+/* 导航点 */
+.point{
+	z-index: 2;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+.point ul{
+	padding: 0;
+	margin: 0;
+	list-style: none; 
+}
+.point ul li{
+	float: left;/* 向左漂浮:垂直排列变为水平排列 */
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+	background-color: gray;
+	margin-right: 10px;
+}
+.point ul li:hover{
+	background-color: white;
+}
+

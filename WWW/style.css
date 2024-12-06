@@ -1,0 +1,12 @@
+.mybutton {
+    background-color: #84b7d9;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-family: 华文新魏;
+    padding: 16px;
+    border: none ;
+    border-radius:64px;
+    box-shadow: 8px 8px 8px #6a7678;
+    text-decoration: none;
+    cursor: pointer;
+}

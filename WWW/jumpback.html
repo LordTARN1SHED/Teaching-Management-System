@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>准备跳转</title>
+	<link rel="stylesheet" type="text/css" href="fzx.css">
+	<script>
+        window.onload = function() {
+            var countdown = 5; // 倒计时秒数
+            var redirectUrl = "photographing.html"; // 跳转的目标页面 URL
+
+            var countdownElement = document.getElementById("countdown");
+
+            // 更新倒计时显示和跳转
+            function updateCountdown() {
+                countdown--;
+                countdownElement.textContent = countdown;
+
+                if (countdown <= 0) {
+                    window.location.href = redirectUrl; // 执行页面跳转
+                } else {
+                    setTimeout(updateCountdown, 1000); // 每隔一秒更新倒计时
+                }
+            }
+
+            updateCountdown(); // 开始倒计时
+        };
+    </script>
+</head>
+<style>
+	body {
+		background-image: url('bg.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+</style>
+
+<body align="center" style="color: rgb(255, 255, 255);font-family:微软雅黑">
+	
+	<h1>文件上传成功，即将返回，倒计时: <span id="countdown">5</span> 秒</h1>
+
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>用户注册</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<style>
+	body {
+		background-image: url('bg.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+</style>
+
+<body align="center" style="color: rgba(255, 255, 255, 0.639);font-family:微软雅黑">
+
+	<h1 style="font-family:华文新魏">用户注册</h1>
+	<hr><br />
+	<table align="center" width="500">
+		<tr>
+			<td></td>
+			<td>
+
+				<form align="left " action="sign.php" method="post" enctype="multipart/form-data"
+					onsubmit="return confirm('确认提交吗？');">
+					用户名　：<input type="text" name="userName" id="userName" placeholder="请输入用户名" required /> <br /><br />
+					邮箱地址：<input type="text" name="emailnum" id="emailnum" required
+						pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="请输入有效的邮箱！" placeholder="请输入邮箱地址"
+						required /> <br /><br />
+					密　码　：<input type="password" name="userPwd" id="userPwd" required pattern="[A-Za-z0-9_]{8,16}"
+						title="请输入8-16位由字母数字或下划线组成的密码" placeholder="请输入密码" required /><br /><br />
+					确认密码：<input type="password" name="userRePwd" id="userRePwd" placeholder="请输入确认密码"
+						required /><br /><br />
+					<script>
+						const password1 = document.getElementById("userPwd");
+						const password2 = document.getElementById("userRePwd");
+
+						password2.addEventListener("input", () => {
+							if (password2.value !== password1.value) {
+								password2.setCustomValidity("两次输入密码不一致！");
+							} else {
+								password2.setCustomValidity("");
+							}
+						});
+					</script>
+					真实姓名：<input type="text" name="turename" id="turename" placeholder="请输入真实姓名" required /><br /><br />
+					学号/教师号/管理员号：<br /><br />
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+					<input type="text" name="schoolnum" id="schoolnum" required pattern="[0-9]{8}"
+						placeholder="请输入编号" title="请输入8位由数字组成的学=编号" required /><br /><br />
+					性别：<input type="radio" name="sex" value="male" />男
+					<input type="radio" name="sex" value="female" />女
+					<input type="radio" name="sex" value="else" checked="checked" />其他<br /><br />
+					身份：<input type="radio" name="identit" value="teacher" />老师
+					<input type="radio" name="identit" value="student" />学生
+					<input type="radio" name="identit" value="admin" checked="checked" />管理员<br /><br />
+					上传头像：<input type="file" accept="image/*" name="headImage" /><br /><br />
+					您的手机：<input type="text" name="phonenum" id="phonenum" pattern="1[3-9][0-9]{9}"
+						title="请输入有效的11位由数字组成的手机号码" placeholder="请输入您的手机号" required /><br /><br />
+					所属学院：<input type="text" name="copname" id="copname" placeholder="请输入学院名称" required /><br /><br />
+					入学/入职年份：<input type="text" name="year" id="year" pattern="19[0-9]{2}|20[0-1][0-9]|202[0-4]"
+					title="请输入正确的年份" placeholder="请输入年份" required /><br /><br />
+					个性签名：<input type="text" name="motto" id="motto"/><br /><br />
+					<input type="checkbox" name="agree" value="agree" required /> 已详细阅读并同意<a
+						href="item.html">注册条款</a>
+					<br /><br />
+					<p align="center">
+						<input class="mybutton" type="submit" value="注册"
+							name="btnSubmit" />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						<input class="mybutton" type="reset" value="重置" name="btnReset" /><br /><br />
+					</p>
+				</form>
+			<td></td>
+			</td>
+		</tr>
+	</table>
+	<a href="login.html">已有账号请点此登录</a><br /><br />
+	<hr><br>
+	<h10 style="color: grey;font-family:Times New Roman">copyright--1798224146@qq.com</h10>
+</body>
+
+</html>
